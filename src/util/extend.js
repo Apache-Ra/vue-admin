@@ -1,8 +1,4 @@
-/**
- * 
- * 
- * 
- **/
+'use strict'
 export default function extend () {
   let length = arguments.length
   let target = arguments[0] || {}

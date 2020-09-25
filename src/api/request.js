@@ -1,6 +1,7 @@
 'use strict'
 import axios from 'axios'
-const ajax = (options) => {
+
+const Request = (options) => {
   const type = options.type ? options.type : 'json'
   const token = (options.token) ? options.token : null
   const businessType = (options.businessType) ? options.businessType : null
@@ -14,8 +15,8 @@ const ajax = (options) => {
     timeout: 10000,
     headers: options.method === 'get' ? {
       'X-Requested-With': 'XMLHttpRequest',
-      Accept: 'application/json',
       'Content-Type': 'application/json; charset=UTF-8',
+      Accept: 'application/json',
       businessType: businessType,
       token: token
     } : {
@@ -68,4 +69,4 @@ const handleHttpResponseStatus = (error, status) => {
   return false
 }
 
-export default ajax
+export default Request
