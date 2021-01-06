@@ -10,7 +10,7 @@ const routes = [
     path: '/home',
     name: 'home',
     meta: { title: 'HOME', keepAlive: true, isBack: false },
-    component: _import('home')
+    component: _import('home/index')
   }
 ]
 

@@ -4,7 +4,7 @@ module.exports = {
   outputDir: process.env.NODE_ENV + '-dev',
   assetsDir: '',
   indexPath: 'index.html',
-  productionSourceMap: process.env.NODE_ENVtrue === 'test',
+  productionSourceMap: process.env.NODE_ENV === 'test',
   configureWebpack: {
     resolve: {
       alias: {
