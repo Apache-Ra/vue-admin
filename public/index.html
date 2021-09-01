@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      .ld-rt {animation: ld-rt-kf 3s linear infinite;}
+      @keyframes ld-rt-kf {
+        0% {transform: rotate(0);}
+        100% {transform: rotate(360deg)}
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <div style="position:absolute;top:50%;left:50%;transform: translate(-50%, -50%); text-align: center; font-size:13px">
+        <svg class="ld-rt" width="20" height="20" viewBox="0,0,32,32" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 2h2v8h-2v-8zM15 22h2v8h-2v-8zM30 15v2h-8v-2h8zM10 15v2h-8v-2h8zM5.406 6.813l1.406-1.406 5.656 5.656-1.406 1.406zM19.531 20.938l1.406-1.406 5.656 5.656-1.406 1.406zM25.188 5.406l1.406 1.406-5.656 5.656-1.406-1.406zM11.063 19.531l1.406 1.406-5.656 5.656-1.406-1.406z"
+                stroke-width="1.5"/>
+        </svg>
+        <div>拼命加载中...</div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
